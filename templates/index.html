@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survival Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="content">
+    <h1 style=".....">Titanic Survival Prediction</h1>
+
+    <div class="form">
+        <form action="/predict" method="POST">
+            <select name="Pclass" id="Pclass">
+                <option value="1">1st Class</option>
+                <option value="2">2nd Class</option>
+                <option value="3">3rd Class</option>
+            </select>
+            <select name="SibSp" id="SibSp" >
+                <option value="0">0 SibSp</option>
+                <option value="1">1 SibSp</option>
+                <option value="2">2 SibSp</option>
+                <option value="3">3 SibSp</option>
+                <option value="4">4 SibSp</option>
+                <option value="5">5 SibSp</option>
+                <option value="6">6 SibSp</option>
+                <option value="7">7 SibSp</option>
+                <option value="8">8 SibSp</option>
+                <option value="9">9 SibSp</option>
+                <option value="10">10 SibSp</option>
+            </select>
+            <select name="Parch" id="Parch" placeholder="Number of Parents/Children">
+                <option value="0">0 Parch</option>
+                <option value="1">1 Parch</option>
+                <option value="2">2 Parch</option>
+                <option value="3">3 Parch</option>
+                <option value="4">4 Parch</option>
+                <option value="5">5 Parch</option>
+                <option value="6">6 Parch</option>
+                <option value="7">7 Parch</option>
+                <option value="8">8 Parch</option>
+                <option value="9">9 Parch</option>
+                <option value="10">10 Parch</option>
+            </select>
+            <select name="male" id="male">
+            <option value="1">Male</option>
+            <option value="0">FeMale</option>
+            </select>
+            <input type="number" name="Age" id="Age" placeholder="Age">
+            <input type="number" step="any" name="Fare" id="Fare" placeholder="Fare">
+            <input type="submit" value="Predict">
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survival Prediction</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+<body>
+
+  <div class="table-users">
+   <div class="header">Titanic Survival Prediction <br>
+   1 = YES and 0 = No
+   </div>
+
+      <p>There is a {{prediction}} chance of survival of the person.</p>
+</div>
+
+
+
+</body>
+
+</html>
